@@ -1,9 +1,9 @@
 import React from "react";
 
-const Blur = () => {
+const Blur = ({className, fromColor, toColor}) => {
   return (
-    <div className="absolute top-0 left-0 bg-dark blur-clip blur-lg">
-      <div className="w-[80vw] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
+    <div className={`absolute ${className} bg-dark blur-clip blur-lg`}>
+      <div className={`w-[80vw] aspect-square bg-gradient-to-r from-${fromColor} to-${toColor} opacity-50`}></div>
     </div>
   );
 };

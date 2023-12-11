@@ -5,7 +5,11 @@ import Button from "../components/buttons/buttons";
 const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
-      <Blur />
+      <Blur
+        className={`top-0 left-0`}
+        fromColor={`dark`}
+        toColor={`light-green`}
+      />
       {/* SVG jsx & text for job search */}
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center mb-4">
         <svg
