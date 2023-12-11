@@ -13,7 +13,7 @@ const GetStarted = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-12 h-12 text-dark-green"
         >
           <path
             strokeLinecap="round"
