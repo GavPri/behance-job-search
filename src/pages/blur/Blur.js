@@ -11,4 +11,10 @@ const Blur = ({position, color, size}) => {
   );
 };
 
+// ---- Declare Prop Types 
+Blur.PropType = {
+  position : PropType.string,
+  color : PropType.string,
+  size : PropType.string,
+}
 export default Blur;
