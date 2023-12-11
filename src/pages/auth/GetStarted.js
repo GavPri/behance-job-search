@@ -3,7 +3,7 @@ import Blur from "../blur/Blur";
 
 const GetStarted = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-end h-screen w-full">
       <Blur />
       {/* SVG jsx for job search */}
       <div className="w-full h-[30vh] bg-charcoal">
