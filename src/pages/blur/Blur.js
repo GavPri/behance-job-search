@@ -18,6 +18,10 @@ const Blur = ({ position, color, size, gradientFrom, gradientTo, opacity }) => {
           teritary: 'w-[15vw]',
         }
       },
+      defaultVariants: {
+        variant : 'primary',
+        size: 'primary'
+      }
     }
   );
 
