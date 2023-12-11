@@ -29,7 +29,9 @@ const GetStarted = () => {
         <p className="text-3xl text-off-white">Let's Find New Jobs!</p>
       </div>
       {/* Button for job search */}
-      <Button />
+      <Button className={`w-[95vw] bg-purple h-fit`}>
+        <h3 className="text-xl text-dark upp">Get Started!</h3>
+      </Button>
     </div>
   );
 };
