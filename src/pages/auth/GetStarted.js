@@ -4,7 +4,7 @@ import Blur from "../blur/Blur";
 const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
-      <Blur />
+      <Blur size="80vw" />
       {/* SVG jsx & text for job search */}
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center">
         <svg
