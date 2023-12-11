@@ -20,17 +20,8 @@ const GetStarted = () => {
       toColor: "purple",
     },
   ];
-  return (
-    <div className="flex flex-col items-center justify-end h-screen w-full">
-      {blurConfigurations.map(({ className, fromColor, toColor }, index) => (
-        <Blur
-          key={index}
-          className={className}
-          fromColor={fromColor}
-          toColor={toColor}
-        />
-      ))}
-      {/* SVG jsx & text for job search */}
+  const renderSVGandText = () => {
+    return (
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +39,20 @@ const GetStarted = () => {
         </svg>
         <p className="text-3xl text-off-white">Let's Find New Jobs!</p>
       </div>
+    );
+  };
+  return (
+    <div className="flex flex-col items-center justify-end h-screen w-full">
+      {blurConfigurations.map(({ className, fromColor, toColor }, index) => (
+        <Blur
+          key={index}
+          className={className}
+          fromColor={fromColor}
+          toColor={toColor}
+        />
+      ))}
+      {/* SVG jsx & text for job search */}
+      {renderSVGandText()}
       {/* Button for job search */}
       <Button className={`w-[95vw] bg-purple h-fit relative mb-6`}>
         <h3 className="text-xl text-dark upp">Get Started!</h3>
