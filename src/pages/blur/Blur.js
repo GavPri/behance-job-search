@@ -5,8 +5,8 @@ import PropType from 'prop-types'
 
 const Blur = ({position, color, size}) => {
   return (
-    <div className="absolute top-0 left-0 bg-dark blur-clip blur-lg">
-      <div className="w-[80vw] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
+    <div className={`${position} top-0 left-0 bg-${color} blur-clip blur-lg`}>
+      <div className={`${size} aspect-square bg-gradient-to-r from-dark to-light-green opacity-50`}></div>
     </div>
   );
 };
