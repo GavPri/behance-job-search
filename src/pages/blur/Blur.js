@@ -17,4 +17,11 @@ Blur.PropType = {
   color : PropType.string,
   size : PropType.string,
 }
+
+// ---- Defualt props
+Blur.defaultProps = {
+  position: 'absolute',
+  color: 'dark',
+  size : 'w-[80vw]'
+}
 export default Blur;
