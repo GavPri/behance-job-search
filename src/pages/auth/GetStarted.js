@@ -5,13 +5,9 @@ import Button from "../components/buttons/buttons";
 const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
-      <Blur
-        size="32"
-        color="bg-blue-500"
-        position={{ top: "50px", left: "50px" }}
-      />
+      <Blur />
       {/* SVG jsx & text for job search */}
-      <div className="w-full h-[30vh] flex flex-col justify-evenly items-center">
+      <div className="w-full h-[30vh] flex flex-col justify-evenly items-center mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -29,7 +25,7 @@ const GetStarted = () => {
         <p className="text-3xl text-off-white">Let's Find New Jobs!</p>
       </div>
       {/* Button for job search */}
-      <Button className={`w-[95vw] bg-purple h-fit relative`}>
+      <Button className={`w-[95vw] bg-purple h-fit relative mb-4`}>
         <h3 className="text-xl text-dark upp">Get Started!</h3>
         <div className="w-[10%] aspect-square rounded-full bg-dark absolute right-[2.5vw] top-[10%] flex justify-center items-center">
           <svg
