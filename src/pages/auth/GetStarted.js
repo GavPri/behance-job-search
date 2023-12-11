@@ -1,5 +1,5 @@
 import React from "react";
-import Blur from "../blur/Blur";
+import Blur from "../components/blur/Blur";
 
 const GetStarted = () => {
   return (
