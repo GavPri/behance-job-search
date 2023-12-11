@@ -1,29 +1,16 @@
-// The blur is a background effect that
-// will be used on the get started page.
 import React from "react";
-import PropTypes from "prop-types";
 
-const Blur = ({ position, color, size }) => {
+const Blur = ({ position, color, size, gradientFrom, gradientTo, opacity }) => {
+  const containerStyle = `absolute ${position} top-0 left-0 bg-${color} blur-clip blur-lg`;
+  const overlayStyle = `w-[${size}vw] aspect-square bg-gradient-to-r from-${gradientFrom} to-${gradientTo} opacity-${opacity}`;
+
   return (
-    <div className={`${position} top-0 left-0 bg-${color} blur-clip blur-lg`}>
-      <div
-        className={`w-[${size}] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50`}
-      ></div>
+    <div className={containerStyle}>
+      <div className={overlayStyle}></div>
     </div>
   );
 };
-
-// ---- Declare Prop Types
-Blur.propTypes = {
-  position: PropTypes.string,
-  color: PropTypes.string,
-  size: PropTypes.string,
-};
-
-// ---- Defualt props
-Blur.defaultProps = {
-  position: "absolute",
-  color: "dark",
-  size: "80vw",
-};
 export default Blur;
+
+// Example usage:
+// <Blur position="relative" color="blue" size={50} gradientFrom="dark" gradientTo="light-green" opacity={50} />
