@@ -1,3 +1,9 @@
+// -----
+// The getting started page is the first page a user see's when they open the app.
+// This page uses the blur and button component.
+// To clean up the return statement from getting started
+// I created blur configurations & the renderSVGandText, renderButtonSVG functions.
+// -----
 import React from "react";
 import Blur from "../components/blur/Blur";
 import Button from "../components/buttons/buttons";
@@ -41,6 +47,26 @@ const GetStarted = () => {
       </div>
     );
   };
+  const renderButtonSVG = () => {
+    return (
+      <div className="w-[10%] aspect-square rounded-full bg-dark absolute right-[2.5vw] top-[10%] flex justify-center items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 text-purple"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
       {blurConfigurations.map(({ className, fromColor, toColor }, index) => (
@@ -56,22 +82,7 @@ const GetStarted = () => {
       {/* Button for job search */}
       <Button className={`w-[95vw] bg-purple h-fit relative mb-6`}>
         <h3 className="text-xl text-dark upp">Get Started!</h3>
-        <div className="w-[10%] aspect-square rounded-full bg-dark absolute right-[2.5vw] top-[10%] flex justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 text-purple"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-            />
-          </svg>
-        </div>
+        {renderButtonSVG()}
       </Button>
     </div>
   );
