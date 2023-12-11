@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blur = ({ className, fromColor, toColor, width }) => {
+const Blur = ({ className, fromColor, toColor }) => {
   return (
     <div className={`absolute ${className} bg-dark blur-clip blur-lg`}>
       <div
