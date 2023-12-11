@@ -1,4 +1,6 @@
 import React from "react";
+// CVA import
+import { cva } from "class-variance-authority";
 
 const Blur = ({ position, color, size, gradientFrom, gradientTo, opacity }) => {
   const containerStyle = `absolute ${position} top-0 left-0 bg-${color} blur-clip blur-lg`;
