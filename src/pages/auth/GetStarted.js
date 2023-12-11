@@ -6,9 +6,14 @@ const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
       <Blur
-        className={`top-0 left-0`}
+        className={`top-0 left-0 w-[80vw]`}
         fromColor={`dark`}
         toColor={`light-green`}
+      />
+      <Blur
+        className={`bottom-[120px] right-[-150px] w-[60vw] `}
+        fromColor={`dark`}
+        toColor={`dark-green`}
       />
       {/* SVG jsx & text for job search */}
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center mb-4">
