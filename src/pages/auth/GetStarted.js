@@ -1,5 +1,6 @@
 import React from "react";
 import Blur from "../components/blur/Blur";
+import Button from "../components/buttons/buttons";
 
 const GetStarted = () => {
   return (
@@ -28,6 +29,7 @@ const GetStarted = () => {
         <p className="text-3xl text-off-white">Let's Find New Jobs!</p>
       </div>
       {/* Button for job search */}
+      <Button />
     </div>
   );
 };
