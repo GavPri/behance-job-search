@@ -6,7 +6,7 @@ import React from "react";
 const Blur = () => {
   return (
     <div className="absolute top-0 left-0 bg-dark blur-clip blur-lg">
-      <div className="w-[80vw] aspect-square bg-gradient-to-r from-dark to-charcoal opacity-50"></div>
+      <div className="w-[80vw] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
     </div>
   );
 };
