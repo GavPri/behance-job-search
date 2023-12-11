@@ -15,7 +15,11 @@ const GetStarted = () => {
         fromColor={`dark`}
         toColor={`dark-green`}
       />
-      <Blur/>
+      <Blur
+        className={`top-1/2 right-2/3 w-[20vw] rotate-180`}
+        fromColor={`dark`}
+        toColor={`purple`}
+      />
       {/* SVG jsx & text for job search */}
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center mb-4">
         <svg
