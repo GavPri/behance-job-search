@@ -5,12 +5,9 @@ const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
       <Blur
-        position="absolute"
-        color="dark"
-        size={80}
-        gradientFrom="dark"
-        gradientTo="light-green"
-        opacity={50}
+        size="32"
+        color="bg-blue-500"
+        position={{ top: "50px", left: "50px" }}
       />
       {/* SVG jsx & text for job search */}
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center">
