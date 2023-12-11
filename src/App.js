@@ -2,7 +2,7 @@ import GetStarted from "./pages/auth/GetStarted";
 
 function App() {
   return (
-    <div>
+    <div className="bg-dark min-h-screen min-w-screen">
       <GetStarted />
     </div>
   );
