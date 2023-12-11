@@ -4,9 +4,9 @@ import { cva } from "class-variance-authority";
 
 const Blur = ({ position, color, size, gradientFrom, gradientTo, opacity }) => {
   const blurVariants = cva(
+    "absolute bg-linear-to-r from-bg-dark to-light-green top-0 left-0 blur-clip"
+  );
 
-  )
-  
   return (
     <div className={containerStyle}>
       <div className={overlayStyle}></div>
