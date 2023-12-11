@@ -6,7 +6,7 @@ const GetStarted = () => {
     <div className="flex flex-col items-center justify-end h-screen w-full">
       <Blur />
       {/* SVG jsx for job search */}
-      <div className="w-full h-[30vh] bg-charcoal flex justify-center items-center">
+      <div className="w-full h-[30vh] bg-charcoal flex flex-col justify-evenly items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
