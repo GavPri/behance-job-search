@@ -1,12 +1,9 @@
 import React from "react";
 
-const Blur = ({ position, color, size, gradientFrom, gradientTo, opacity }) => {
-  const containerStyle = `absolute ${position} top-0 left-0 bg-${color} blur-clip blur-lg`;
-  const overlayStyle = `w-[${size}vw] aspect-square bg-gradient-to-r from-${gradientFrom} to-${gradientTo} opacity-${opacity}`;
-
+const Blur = () => {
   return (
-    <div className={containerStyle}>
-      <div className={overlayStyle}></div>
+    <div className="absolute top-0 left-0 bg-dark blur-clip blur-lg">
+      <div className="w-[80vw] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
     </div>
   );
 };
