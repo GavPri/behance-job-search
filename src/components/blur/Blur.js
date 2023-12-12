@@ -7,8 +7,8 @@ import React from "react";
 
 const Blur = () => {
   return (
-    <div className="absolute top-0 left-0  blur-2xl">
-      <div className="w-[80vw] aspect-square bg-gradient-to-r blur-clip from-orange to-light-green opacity-50 "></div>
+    <div className="absolute top-0 left-0 blur-xl rotate-45">
+      <div className="w-[100vw] aspect-square bg-gradient-to-r blur-clip from-dark-green to-light-green opacity-50 "></div>
     </div>
   );
 };

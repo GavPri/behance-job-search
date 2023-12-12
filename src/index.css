@@ -13,14 +13,6 @@ Custom clippy path from ( from stack overflow )
 */
 @layer utilities {
   .blur-clip {
-    clip-path: polygon(
-      93% 0,
-      100% 26%,
-      66% 58%,
-      55% 98%,
-      52% 65%,
-      57% 37%,
-      46% 13%
-    );
+    clip-path: circle(50% at 50% 50%);
   }
 }
