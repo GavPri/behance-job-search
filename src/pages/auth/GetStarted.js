@@ -52,14 +52,13 @@ const GetStarted = () => {
   };
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
-      {blurConfigurations.map(({ className, fromColor, toColor }, index) => (
         <Blur
           key={index}
           className={className}
           fromColor={fromColor}
           toColor={toColor}
         />
-      ))}
+      
       {/* SVG jsx & text for job search */}
       {renderSVGandText()}
       {/* Button for job search */}
