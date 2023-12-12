@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const fetchProfileInfo = () => {
-  axios.get("https://randomuser.me/api/").then((response) => {
-    const user = response.data.results[0];
-    const userPicture = user.picture.medium;
-    
-  });
-};
-fetchProfileInfo();
-
 const Avatar = () => {
+  const [userDetails, setUserDetails] = useState(null);
+
+  const fetchProfileInfo = () => {
+    axios.get("https://randomuser.me/api/").then((response) => {
+      const user = response.data.results[0];
+      setUserDetails(user);
+    });
+  };
+  
   return <div>Avatar</div>;
 };
 
