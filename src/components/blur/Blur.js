@@ -8,8 +8,10 @@ import React from "react";
 const Blur = () => {
   return (
     <div className="absolute top-0 left-0 bg-dark blur-clip blur-[64px]">
-      <div className="aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
+      <div className="w-[40vw] aspect-square bg-gradient-to-r from-dark to-light-green opacity-50"></div>
     </div>
   );
 };
+
 export default Blur;
+

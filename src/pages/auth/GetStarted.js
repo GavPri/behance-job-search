@@ -5,8 +5,8 @@
 // I created blur configurations & the renderSVGandText, renderButtonSVG functions.
 // -----
 import React from "react";
-import Blur from "../components/blur/Blur";
 import Button from "../components/buttons/buttons";
+import Blur from "../../components/blur/Blur";
 
 const GetStarted = () => {
   const renderSVGandText = () => {
@@ -53,7 +53,6 @@ const GetStarted = () => {
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
       <Blur />
-
       {/* SVG jsx & text for job search */}
       {renderSVGandText()}
       {/* Button for job search */}
