@@ -3,7 +3,8 @@ import axios from "axios";
 
 const fetchProfileInfo = () => {
   axios.get("https://randomuser.me/api/").then((response) => {
-    console.log(response.data.results.pictureUrl);
+    const user = response.data.results[0];
+    console.log(user);
   });
 };
 fetchProfileInfo();
