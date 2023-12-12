@@ -25,14 +25,14 @@ const HomePage = () => {
   // RenderSVG
   const renderNotificationsSVG = () => {
     return (
-      <div className="ml-auto">
+      <div className="ml-auto mr-4 w-10 h-10 flex justify-center items-center border-2 border-charcoal rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 text-off-white mr-4"
+          className="w-6 h-6 text-off-white"
         >
           <path
             strokeLinecap="round"
