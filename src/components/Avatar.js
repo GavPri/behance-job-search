@@ -10,8 +10,21 @@ const Avatar = () => {
       setUserDetails(user);
     });
   };
-  
-  return <div>Avatar</div>;
+
+  useEffect(() => {
+    fetchProfileInfo();
+  }, []);
+
+  // Check if userDetails is available before rendering
+
+  // Destructure properties
+
+  return (
+    <div>
+      <div>First Name</div>
+      <img src="" alt="" />
+    </div>
+  );
 };
 
 export default Avatar;
