@@ -1,19 +1,15 @@
-import React from 'react'
-import axios from 'axios'
+import React from "react";
+import axios from "axios";
 
-const fetchProfileInfo = async () => {
-    try {
-        const { data } = axios("http://randomuser.me/api/?results=1");
-        console.log(data)
-    } catch (err) {
-        console.log(err)
-    }
-}
+const fetchProfileInfo = () => {
+  axios.get("https://jsonplaceholder.typicode.com/users/1").then((response) => {
+    console.log(response);
+  });
+};
+fetchProfileInfo();
 
 const Avatar = () => {
-  return (
-    <div>Avatar</div>
-  )
-}
+  return <div>Avatar</div>;
+};
 
-export default Avatar
+export default Avatar;

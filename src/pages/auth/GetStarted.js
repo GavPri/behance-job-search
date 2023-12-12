@@ -5,7 +5,7 @@
 // I created blur configurations & the renderSVGandText, renderButtonSVG functions.
 // -----
 import React from "react";
-import Button from "../components/buttons/buttons";
+import Button from "../../components/buttons/buttons";
 import Blur from "../../components/blur/Blur";
 
 const GetStarted = () => {
@@ -56,7 +56,8 @@ const GetStarted = () => {
       {/* SVG jsx & text for job search */}
       {renderSVGandText()}
       {/* Button for job search */}
-      <Button className={`w-[95vw] bg-purple h-fit relative mb-6`}>
+      <Button>
+        className={`w-[95vw] bg-purple h-fit relative mb-6`}
         <h3 className="text-xl text-dark upp">Get Started!</h3>
         {renderButtonSVG()}
       </Button>
