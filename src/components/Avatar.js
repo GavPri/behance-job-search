@@ -16,9 +16,11 @@ const Avatar = () => {
   }, []);
 
   // Check if userDetails is available before rendering
-
+  if (!userDetails) {
+    return <div>Loading...</div>
+  }
   // Destructure properties
-
+  const {name, picture} = userDetails;
   return (
     <div>
       <div>First Name</div>
