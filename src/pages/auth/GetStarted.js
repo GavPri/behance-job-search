@@ -52,13 +52,8 @@ const GetStarted = () => {
   };
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
-        <Blur
-          key={index}
-          className={className}
-          fromColor={fromColor}
-          toColor={toColor}
-        />
-      
+      <Blur />
+
       {/* SVG jsx & text for job search */}
       {renderSVGandText()}
       {/* Button for job search */}
