@@ -66,7 +66,7 @@ const GetStarted = () => {
         </svg>
       </div>
     );
-  }
+  };
   return (
     <div className="flex flex-col items-center justify-end h-screen w-full">
       {blurConfigurations.map(({ className, fromColor, toColor }, index) => (
