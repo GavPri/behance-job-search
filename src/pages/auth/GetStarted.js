@@ -32,7 +32,7 @@ const GetStarted = () => {
   };
   const renderButtonSVG = () => {
     return (
-      <div className="w-[10%] aspect-square rounded-full bg-dark absolute right-[2.5vw] top-[10%] flex justify-center items-center">
+      <div className="w-[10%] aspect-square rounded-full bg-dark absolute right-3 top-3 flex justify-center items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
