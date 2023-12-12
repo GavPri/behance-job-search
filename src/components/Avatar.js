@@ -22,9 +22,12 @@ const Avatar = () => {
   // Destructure properties
   const { name, picture } = userDetails;
   return (
-    <div>
-      <div>{name.first}</div>
+    <div className="flex p-4">
       <img src={picture.thumbnail} alt="" className="rounded-full" />
+      <div className="flex flex-col items-start justify-between">
+        <p>Hello,</p>
+        {name.first}
+      </div>
     </div>
   );
 };
