@@ -43,13 +43,18 @@ const HomePage = () => {
       </div>
     );
   };
-  return (
-    <div className="flex items-center w-full">
-      <Avatar userDetails={userDetails} />
+  const renderGreeting = () => {
+    return (
       <div className="flex flex-col justify-between items-start">
         <p className="text-off-white">Good Morning</p>
         <p className="font-bold text-off-white">{name.first}</p>
       </div>
+    );
+  };
+  return (
+    <div className="flex items-center w-full">
+      <Avatar userDetails={userDetails} />
+      {renderGreeting()}
       {renderNotificationsSVG()}
     </div>
   );
