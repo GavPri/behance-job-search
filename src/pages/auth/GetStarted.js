@@ -9,23 +9,6 @@ import Blur from "../components/blur/Blur";
 import Button from "../components/buttons/buttons";
 
 const GetStarted = () => {
-  const blurConfigurations = [
-    {
-      className: "top-0 left-0 w-[80vw]",
-      fromColor: "dark",
-      toColor: "light-green",
-    },
-    {
-      className: "top-1/2 right-0 w-[50vw] rotate-180",
-      fromColor: "dark",
-      toColor: "dark-green",
-    },
-    {
-      className: "top-1/2 right-2/3 w-[20vw]",
-      fromColor: "dark",
-      toColor: "purple",
-    },
-  ];
   const renderSVGandText = () => {
     return (
       <div className="w-full h-[30vh] flex flex-col justify-evenly items-center">
