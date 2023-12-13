@@ -1,0 +1,24 @@
+{
+  "jobCategories": [
+    {
+      "category": "HR",
+      "jobs": [
+        {
+          "title": "HR Manager",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "location": "City A"
+        },
+        {
+          "title": "HR Coordinator",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "location": "City B"
+        },
+        {
+          "title": "Recruitment Specialist",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "location": "City C"
+        }
+      ]
+    }
+  ]
+}
