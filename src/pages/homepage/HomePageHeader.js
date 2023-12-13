@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Avatar from "../../components/Avatar";
 import axios from "axios";
 
-const HomePage = () => {
+const HomePageHeader = () => {
   const [userDetails, setUserDetails] = useState(null);
 
   const fetchProfileInfo = () => {
@@ -60,4 +60,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageHeader;
